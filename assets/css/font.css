@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    src: url('/assets/fonts/NotoSansKR-VariableFont_wght.ttf') format("truetype");
+    font-display: swap;
+} 
+
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    font-style:normal;
+    font-weight:normal;
+    src:url('/assets/fonts/SamsungSharpSans-regular.TTF') format("truetype"),
+        url('/assets/fonts/SamsungSharpSans-regular.TTF') format("embedded-opentype");
+}
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    font-style:normal;
+    font-weight:bold;
+    src:url('/assets/fonts/SamsungSharpSans-Bold.eot');
+    src:url('/assets/fonts/SamsungSharpSans-Bold.eot?#iefix') format("embedded-opentype"),
+        url('/assets/fonts/SamsungSharpSans-Bold.woff2') format("woff2"),
+        url('/assets/fonts/SamsungSharpSans-Bold.woff') format("woff"),
+        url('/assets/fonts/SamsungSharpSans-Bold.ttf') format("truetype");
+}

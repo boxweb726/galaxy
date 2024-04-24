@@ -1,0 +1,288 @@
+@import url('/assets/css/font.css');
+@import url('/assets/css/reset.css');
+
+// 공통
+.color-white {
+    color: #fff;
+}
+.blind {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+body {
+    font-family: 'NotoSansKR';
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.hero-banner-container {
+    width: inherit;
+    height: 850px;
+    background: url('../images/here_banner_bg.png') no-repeat 100%;
+    color: #fff;
+    padding-top: 300px;
+    .hero-banner-inner {
+        max-width: 1730px;
+        margin: 0 auto;
+    }
+    .hero-copy {
+        font-size: 36px;
+        letter-spacing: -0.05em;
+    }
+    .hero-headline {
+        font-family: 'Samsung Sharp Sans';
+        font-size: 120px;
+        line-height: 140px;
+    }
+}
+
+.card-container {
+    padding: 90px 0;
+    overflow-x: hidden;
+    .card-list {
+        display: flex;
+        gap: 54px;
+        margin: 0 auto;
+        padding: 0 0 0 98px;
+    }
+    .card-item {
+        width: 390px;
+        height: 600px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        &.item01 {
+            background-image: url('../images/01.png');
+        }
+        &.item02 {
+            background-image: url('../images/02.png');
+        }
+        &.item03 {
+            background-image: url('../images/03.png');
+        }
+        &.item04 {
+            background-image: url('../images/04.png');
+        }
+        &.item-blank {
+            margin-top: 70px;
+        }
+        .bold {
+            font-weight: 500;
+        }
+    }
+    .card-title {
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: -0.05em;
+        margin-top: 90px;
+    }
+}
+
+.banner-container {
+    width: inherit;
+    height: 255px;
+    background: url('../images/banner_bg.png') no-repeat 100%;
+    color: #fff;
+    padding-top: 42px;
+    .banner-inner {
+        max-width: 1730px;
+        margin: 0 auto;
+    }
+    .banner-copy {
+        font-size: 50px;
+        margin-bottom: 23px;
+        letter-spacing: -0.05em;
+        font-weight: 500;
+    }
+    .btn-benefit {
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        font-size: 23px;
+        padding: 0 33px;
+        border: 1px solid #fff;
+        letter-spacing: -0.05em;
+        border-radius: 50px;
+        height: 55px;
+    }
+}
+
+.product-container {
+    padding: 90px 0;
+    .product-headline {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: -0.05em;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .product-list {
+        display: flex;
+        width: 1730px;
+        margin: 0 auto;
+        gap: 55px;        
+    }
+    .product-item {
+        flex: 1;
+    }
+    .product-input {
+        position: absolute;
+        opacity: 0;
+        &:checked~.product-label { 
+            outline: 3px solid #2053dc;
+        }
+    }
+    .product-label { 
+        display: flex;
+        flex-flow: column;
+        height: 200px;
+        outline: 1px solid #cccccc;
+        border-radius: 20px;
+        line-height: 1;
+        justify-content: center;
+        padding-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: right 43px center;
+        .product-title {
+            font-weight: bold;
+            font-family: 'Samsung Sharp Sans';
+            font-size: 30px;
+        }
+        .product-color {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .product-model {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Samsung Sharp Sans';
+            color: #999999;
+            margin-top: 30px;
+        }
+        &[for="color-black"] {
+            background-image: url('../images/ring01.png');
+        }
+        &[for="color-gold"] {
+            background-image: url('../images/ring02.png');
+        }
+        &[for="color-silver"] {
+            background-image: url('../images/ring03.png');
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .hero-banner-container {
+        width: inherit;
+        height: 520px;
+        background: url('../images/here_banner_bg_mo.png') no-repeat 100%;
+        padding-top: 180px;
+        .hero-banner-inner {
+            max-width: 1730px;
+            margin: 0 auto;
+            padding-left: 60px;
+        }
+        .hero-copy {
+            font-size: 28px;
+            letter-spacing: -0.05em;
+            margin: 0 0 15px 0;
+        }
+        .hero-headline {
+            font-family: 'Samsung Sharp Sans';
+            font-size: 80px;
+            line-height: 90px;
+        }
+    }
+    .card-container {
+        padding: 80px 0;
+        overflow: hidden;
+        .card-list {
+            display: flex;
+            gap: 30px;
+            padding: 0 20px;
+            overflow-x: auto;
+        }
+        .card-item {
+            width: 260px;
+            height: 400px;
+            flex: 0 0 auto;
+            &.item01 {
+                background-image: url('../images/01_mo.png');
+            }
+            &.item02 {
+                background-image: url('../images/02_mo.png');
+            }
+            &.item03 {
+                background-image: url('../images/03_mo.png');
+            }
+            &.item-blank {
+                margin-top: 50px;
+            }
+        }
+        .card-title {
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: -0.05em;
+            margin-top: 60px;
+        }
+    }
+    .banner-container {
+        height: 210px;
+        background: url('../images/banner_bg_mo.png') no-repeat 100%;
+        padding-top: 40px;
+        .banner-inner {
+            padding-left: 53px;
+        }
+        .banner-copy {
+            font-size: 34px;
+            margin-bottom: 17px;
+            letter-spacing: -0.05em;
+        }
+        .btn-benefit {
+            font-size: 23px;
+            padding: 0 25px;
+            height: 55px;
+        }
+    }
+    .product-container {
+        padding: 70px 0 40px 0;
+        .product-headline {
+            font-size: 44px;
+            margin-bottom: 35px;
+        }
+        .product-list {
+            flex-flow: column;
+            width: 680px;
+            gap: 20px;        
+        }
+        .product-label { 
+            height: 200px;
+            .product-title {
+                font-size: 34px;
+            }
+            .product-color {
+                font-size: 32px;
+                margin-top: 5px;
+            }
+            .product-model {
+                font-size: 28px;
+                margin-top: 35px;
+            }
+        }
+    }
+}
