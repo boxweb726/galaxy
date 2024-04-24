@@ -23,19 +23,18 @@ body {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .hero-banner-container {
   width: inherit;
   height: 850px;
-  background: url("../images/here_banner_bg.png") no-repeat 100%;
+  background-image: url("../images/here_banner_bg.png");
+  background-size: cover;
   color: #fff;
   padding-top: 300px;
 }
 .hero-banner-container .hero-banner-inner {
-  max-width: 1730px;
-  margin: 0 auto;
+  padding-left: 100px;
 }
 .hero-banner-container .hero-copy {
   font-size: 36px;
@@ -52,6 +51,8 @@ body {
   overflow-x: hidden;
 }
 .card-container .card-list {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   gap: 54px;
   margin: 0 auto;
