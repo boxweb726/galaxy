@@ -83,7 +83,7 @@ body {
         line-height: 46px;
         text-align: center;
         letter-spacing: -0.05em;
-        margin-top: 90px;
+        padding-top: 90px;
     }
 }
 
@@ -93,8 +93,7 @@ body {
     background-size: cover;
     padding-top: 42px;
     .banner-inner {
-        max-width: 1730px;
-        margin: 0 auto;
+        padding-left: 100px;
     }
     .banner-copy {
         font-size: 50px;
@@ -183,19 +182,17 @@ body {
 
 @media screen and (max-width: 720px) {
     .hero-banner-container {
-        width: inherit;
         height: 520px;
         background: url('../images/here_banner_bg_mo.png') no-repeat 100%;
         padding-top: 180px;
         .hero-banner-inner {
             max-width: 1730px;
-            margin: 0 auto;
             padding-left: 60px;
         }
         .hero-copy {
             font-size: 28px;
             letter-spacing: -0.05em;
-            margin: 0 0 15px 0;
+            margin-bottom: 15px;
         }
         .hero-headline {
             font-family: 'Samsung Sharp Sans';
@@ -205,10 +202,9 @@ body {
     }
     .card-container {
         padding: 80px 0;
-        overflow: hidden;
         .card-list {
             position: relative;
-            width: auto;
+            width: 100%;
             gap: 30px;
             padding: 0 20px;
             overflow-x: auto;
@@ -240,7 +236,7 @@ body {
             line-height: 36px;
             text-align: center;
             letter-spacing: -0.05em;
-            margin-top: 60px;
+            padding-top: 60px;
         }
     }
     .banner-container {
